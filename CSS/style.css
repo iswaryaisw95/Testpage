@@ -1,0 +1,204 @@
+/* font-family: "Oswald", sans-serif; "Rozha One", serif; "Montserrat", serif; "Kanit", serif; "Blinker", serif; "Agdasima", serif; */
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    /* width: 100%; */
+    z-index: -2;
+    object-fit: contain;
+    object-position: left;
+}
+
+.overlay {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 0%);
+}
+
+/* menu */
+.bg-cwhite {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+}
+
+/* Section */
+
+.welcome-text {
+    font-family: "Agdasima", serif;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #021318;
+}
+
+.pink-text {
+    color: #E12955 !important;
+}
+
+.header-font {
+    font-family: "Blinker", serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.section-header-text {
+    font-family: "Blinker", serif;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.body-text {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #fff !important;
+}
+
+.section-1 {
+    z-index: 1;
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-section-1 {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+
+.sub-section-1 h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* ------------------ */
+
+.moto-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+
+.moto-text {
+    /* border: 1px solid #fff; */
+    padding: 3px;
+    border-radius: 16px;
+    background: repeating-conic-gradient(from var(--angle), #e1295400, #E12955, #e1295400, #e1295400, #e1295400, #E12955, #e1295400, #e1295400);
+    text-align: center;
+    animation: rotate 10s linear infinite;
+}
+
+.moto-text:nth-child(2) {
+    background: repeating-conic-gradient(from var(--angle), #e1295400, #299de1, #e1295400, #e1295400, #e1295400, #299de1, #e1295400, #e1295400);
+}
+
+.moto-text:nth-child(3) {
+    background: repeating-conic-gradient(from var(--angle), #e1295400, #29e151, #e1295400, #e1295400, #e1295400, #29e151, #e1295400, #e1295400);
+}
+
+.moto-text-inner {
+    padding: 16px;
+    background: #021318;
+    opacity: 0.95;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.bg-image-moto {
+    background-image: url(/SITE/IMAGES/BG/motto-bg-1.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    /* overflow: hidden; */
+}
+
+/* --------------- */
+
+.bg-image-stats {
+    background-image: url(/SITE/IMAGES/BG/stats-bg.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: 2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.stats-section-inner {
+    padding: 16px;
+    background: #021318;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;    
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Scroll Effect</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .section1,
+        .section2 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section1 {
+            background-image: url('/SITE/IMAGES/BG/home-BG.png');
+        }
+
+        .section2 {
+            background-image: url('/SITE/IMAGES/BG/home-BG.png');
+        }
+
+        .text {
+            font-size: 2em;
+            color: white;
+            text-align: center;
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>My Website</h1>
+    </nav>
+    <section class="section1">
+        <div class="text">Welcome to Section 1</div>
+    </section>
+    <section class="section2">
+        <div class="text">Welcome to Section 2</div>
+    </section>
+    <script>
+        window.addEventListener('scroll', () => {
+            const section1Text = document.querySelector('.section1 .text');
+            const section2Text = document.querySelector('.section2 .text');
+            const scrollY = window.scrollY;
+
+            if (scrollY < window.innerHeight) {
+                section1Text.style.opacity = 1 - scrollY / window.innerHeight;
+            } else {
+                section1Text.style.opacity = 0;
+            }
+
+            if (scrollY > window.innerHeight) {
+                section2Text.style.opacity = (scrollY - window.innerHeight) / window.innerHeight;
+            } else {
+                section2Text.style.opacity = 0;
+            }
+        });
+
+    </script>
+</body>
+</html> -->
+
