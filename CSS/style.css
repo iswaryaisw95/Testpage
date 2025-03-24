@@ -162,7 +162,7 @@ body {
 }
 
 .bg-image-moto {
-    background-image: url(https://github.com/iswaryaisw95/Testpage/blob/main/IMAGES/BG/motto-bg-1.png);
+    background-image: url(https://github.com/iswaryaisw95/Testpage/blob/main/IMAGES/BG/motto-bg-1.png?raw=true);
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -172,7 +172,7 @@ body {
 /* --------------- */
 
 .bg-image-stats {
-    background-image: url(https://github.com/iswaryaisw95/Testpage/blob/main/IMAGES/BG/stats-bg.png);
+    background-image: url(https://github.com/iswaryaisw95/Testpage/blob/main/IMAGES/BG/stats-bg.png?raw=true);
     background-size: cover;
     background-position: center;
     /* z-index: 2; */
